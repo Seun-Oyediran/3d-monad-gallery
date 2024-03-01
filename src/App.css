@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -12,4 +14,35 @@
   position: absolute;
   bottom: 1rem;
   left: 1rem;
+}
+
+.app__absolute__icons {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 9;
+  display: flex;
+  /* align-items: baseline; */
+  gap: 0.2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+}
+
+.app__absolute__name {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+}
+
+.app__absolute__name p {
+  color: #fff;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
 }

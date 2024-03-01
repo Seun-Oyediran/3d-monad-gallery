@@ -4,6 +4,7 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { Loader } from "@react-three/drei";
 import Experience from "./components/shared/experience";
+import { Github, Twitter } from "./components/svgs";
 
 function App() {
   return (
@@ -23,6 +24,26 @@ function App() {
         </Suspense>
       </Canvas>
       <Loader />
+      <div className="app__absolute__icons">
+        <div>
+          <a href="https://twitter.com/shawn_kel" target="_blank">
+            <Twitter />
+          </a>
+        </div>
+
+        <div>
+          <a
+            href="https://github.com/Seun-Oyediran/3d-monad-gallery"
+            target="_blank"
+          >
+            <Github />
+          </a>
+        </div>
+      </div>
+
+      {/* <div className="app__absolute__name">
+        <p>Who cooked? Oyediran Stephen</p>
+      </div> */}
     </Fragment>
   );
 }
